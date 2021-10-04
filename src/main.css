@@ -1,0 +1,187 @@
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 50, 50, 0.5);
+}
+
+/* General */
+
+body {
+    color: #f2f2f2;
+    background-color: #262626;
+}
+
+a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+
+h1, h2, h3, p, img, span, button, a, #skills {
+    position: relative;
+    z-index: 100 !important;
+}
+
+.animation-ball {
+    position: fixed;
+    display: block;
+    height: 80px;
+    width: 80px;
+    background-color: #303030;
+    bottom: 50%;
+    left: 50%;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.project-box {
+    background-color: #303030;
+    box-shadow: 4px 4px 10px rgba(255, 50, 50, 0.1);
+}
+
+.project-box span{
+    color: rgba(255, 50, 50, 0.6);
+}
+
+.skill-dot {
+    height: 14px;
+    width: 14px;
+    background-color: rgba(255, 50, 50, 0.4);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.skill-box {
+    background-color: #262626;
+    position: relative;
+    font-size: 20px;
+    z-index: 100 !important;
+    box-shadow: 2px 2px 4px rgba(255, 50, 50, 0.1);
+}
+
+.skill-box p {
+    font-size: 12px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.line {
+    height: 10px;
+    width: 20%;
+    background-color: rgba(255, 50, 50, 0.4);
+}
+
+/* Sections and bigger containers */
+
+#home {
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#home-row {
+    height: 80vh;
+}
+
+#home-text {
+    opacity: 0;
+    position: relative;
+    left: 50px;
+}
+
+#home-img {
+    opacity: 0;
+    position: relative;
+    left: -20px;
+    box-shadow: 8px 10px 18px rgba(255, 50, 50, 0.1);
+    width: 350px;
+}
+
+#about-container {
+    background-color: #303030;
+    box-shadow: 4px 4px 10px rgba(255, 50, 50, 0.1);
+}
+
+#projects {
+    background-color: #262626;
+}
+
+/* Navbar */
+
+#navbar {
+    z-index: 110 !important;
+}
+
+.nav-item a {
+    color: #f2f2f2;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 15px 15px;
+    padding: 0;
+    border-bottom: 1px transparent solid;
+}
+
+.nav-link:hover {
+    color: rgba(255, 50, 50, 0.7);
+}
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    /* Small devices make h2 smaller and center navbar*/
+    #home-row h2 {
+        font-size: 16px !important;
+    }
+    #home-row {
+        padding: 0% !important;
+    }
+    #navbar, .nav {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        justify-content: center !important;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    /* Bigger devices */
+    #home {
+        background: radial-gradient( farthest-corner at top left, rgba(255, 50, 50, 0.5) -20%, transparent 500px), radial-gradient( farthest-corner at bottom right, rgba(255, 50, 50, 0.5) -30%, transparent 400px);
+    }
+    #about {
+        background: radial-gradient( farthest-corner at top right, rgba(255, 50, 50, 0.5) -30%, transparent 400px);
+    }
+    #projects {
+        background: radial-gradient( farthest-corner at bottom left, rgba(255, 50, 50, 0.5) -30%, transparent 500px);
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1439px) {
+    /* Small devices like tablets and laptops */
+    #home {
+        background: radial-gradient( farthest-corner at top left, rgba(255, 50, 50, 0.5) -30%, transparent 300px), radial-gradient( farthest-corner at bottom right, rgba(255, 50, 50, 0.5) -30%, transparent 300px);
+    }
+    #about {
+        background: radial-gradient( farthest-corner at top right, rgba(255, 50, 50, 0.5) -30%, transparent 300px);
+    }
+    #projects {
+        background: radial-gradient( farthest-corner at bottom left, rgba(255, 50, 50, 0.5) -30%, transparent 300px);
+    }
+}

@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS & JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/ac232d5325.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Animejs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript and CSS -->
+    <link rel="stylesheet" href="src/main.css">
+    <script src="src/main.js"></script>
+
+    <title>Jimmy Olsson</title>
+</head>
+
+<body onload="startUp()">
+
+    <section id="home" class="container-fluid">
+        <div id="navbar" class="row align-items-center px-5">
+            <ul class="nav justify-content-end px-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/JimmyOlssonn"> Github</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.linkedin.com/in/jimmy-olsson-a84956221/">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div id="home-row" class="row align-items-center py-5">
+                <div id="home-text" class="col-lg-7 col-md-12 col-sm-12">
+                    <h1 class="display-1 ">Jimmy Olsson</h1>
+                    <h2 class="px-2 lead">Soon to be graduated web developer</h2>
+                    <h2 class="px-4 lead"><i class="fas fa-map-marker-alt"></i> Skövde, Sweden</h2>
+                    <h2 class="px-4 lead"><i class="fas fa-pen"></i> Webbutvecklare - programmering at Högskolan i
+                        skövde (2018 - 2021)</h2>
+                </div>
+                <div class="col-auto">
+                    <img id="home-img" src="img/jimmy3.jpg" class="d-block mx-lg-auto img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="container-fluid">
+        <div id="about-container" class="container col-xxl-8 px-3 rounded">
+            <div class="row py-5">
+                <div class="col-lg-4 col-md-6">
+                    <img src="img/jimmy4.jpg" class="d-block mx-lg-auto img-fluid rounded">
+                </div>
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 ">About me</h1>
+                    <p class="lead">Mitt namn är Jimmy Olsson och jag är 23 år gammal. Jag är en ansvarsfull, driven och
+                        glad person som i slutet av oktober 2021 tar min kandidatexamen i programmet Webbutveckling -
+                        programmering på
+                        Högskolan i Skövde. Född och uppväxt i Delsbo, Hälsingland men bor i Skövde sen jag började min
+                        utbildning 2018.</p>
+                    <h2 class="display-6 mb-3">Contact</h2>
+                    <div class="d-flex justify-content-start text-center flex-wrap gap-3">
+                        <span>
+                            <a href="mailto:olssonjimmy98@gmail.com"><i class="fas fa-envelope fa-3x"></i></a>
+                        </span>
+                        <span>
+                            <a href="https://www.linkedin.com/in/jimmy-olsson-a84956221/"><i
+                                    class="fab fa-linkedin fa-3x"></i></a>
+                        </span>
+                        <span>
+                            <a href="https://github.com/JimmyOlssonn"><i class="fab fa-github-square fa-3x"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <h2 class="display-6 fw-bold mb-3">Skills</h2>
+            <div id="skills" class="row py-2">
+                <!-- See addSkills() in main.js -->
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="container-fluid pt-5">
+        <div class="container col-xxl-8 px-4 py-5">
+            <h1 class="display-5 fw-bold pb-3">Projects</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row g-0 rounded mb-4 project-box">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2"><span>PHP</span> <span>Bootstrap</span>
+                                <span>JavaScript</span> <span>Jquery</span> <span>Ajax</span> <span>CSS</span>
+                                <span>Leaflet</span></strong>
+                            <h3 class="mb-2">TrainingApp</h3>
+                            <p class="card-text mb-auto">Ett pågående projekt som har som mål att bli en fullständig
+                                hemsida där användare kan registrera sig, lägga till träningar med hjälp av en karta och
+                                därefter logga sina träningar i ett diagram. Programmeringsmålen är att jobba mer med PHP,
+                                JavaScript, Leaflet och Bootstrap.</p>
+                            <div class="btn-group" role="group">
+                                <a href="https://github.com/JimmyOlssonn/trainingApp"
+                                    class="btn btn-outline-light btn-sm mt-2"><i class="fab fa-github"></i>
+                                    Code</a>
+                                <a href="#" class="btn btn-outline-light btn-sm mt-2">Check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-0 rounded mb-4 project-box">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2"><span>JavaScript</span> <span>Jquery</span>
+                                <span>Bootstrap</span> <span>Animejs</span> <span>CSS</span></strong>
+                            <h3 class="mb-2">Portfolio</h3>
+                            <p class="card-text mb-auto">Min egna portfolio (och egna hemsida) som jag kan visa mina
+                                projekt och visa upp mig själv. Målen har varit att få till en snygg design med
+                                Bootstrap och CSS, lära sig animera lite med biblioteket Animejs och enklare saker med
+                                JavaScript</p>
+
+                            <div class="btn-group" role="group">
+                                <a href="#" class="btn btn-outline-light btn-sm mt-2"><i class="fab fa-github"></i>
+                                    Code</a>
+                                <a class="btn btn-outline-light btn-sm mt-2" data-bs-toggle="popover"
+                                    data-bs-placement="right" data-bs-content="Du är redan här">Check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row g-0 rounded mb-4 project-box">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2"><span>JavaScript</span> <span>Vue</span>
+                                <span>Angular</span> <span>Leaflet</span></strong>
+                            <h3 class="mb-2">Examensarbete</h3>
+                            <p class="card-text mb-auto">Mitt examensarbete för att avsluta min
+                                kandidatexamen. Mitt arbete går ut på att jämföra JavaScript-ramverken Vue.js och
+                                AngularJS vid filtrering och visualisering av parkeringsplatser i en Leaflet-karta.
+                            </p>
+                            <div class="btn-group" role="group">
+                                <a href="https://github.com/a18jimol/Examensarbete"
+                                    class="btn btn-outline-light btn-sm mt-2"><i class="fab fa-github"></i>
+                                    Code</a>
+                                <a href="https://www.diva-portal.org/smash/record.jsf?pid=diva2:1575252"
+                                    class="btn btn-outline-light btn-sm mt-2">Check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row g-0 rounded mb-4 project-box">
+                        <div class="col p-4">
+                            <strong class="d-inline-block mb-2"><span>JavaScript</span>
+                                <span>CSS</span></strong>
+                            <h3 class="mb-2">Tre i rad</h3>
+                            <p class="card-text mb-auto">Ett mindre projekt för att jobba mer med JavaScript och försöka
+                                bygga en bra A.I som försöker vinna spelet och stoppa spelaren från att vinna.</p>
+                            <div class="btn-group" role="group">
+                                <a href="https://github.com/JimmyOlssonn/tic-tac-toe"
+                                    class="btn btn-outline-light btn-sm mt-2"><i class="fab fa-github"></i>
+                                    Code</a>
+                                <a href="/tic-tac-toe/" class="btn btn-outline-light btn-sm mt-2">Check out</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer mt-auto py-3">
+            <div class="container d-flex justify-content-around">
+                <span><strong>Contact</strong><a href="mailto:olssonjimmy98@gmail.com"> : olssonjimmy98@gmail.com </a></span>
+            </div>
+        </footer>
+    </section>
+    <!-- Background animation -->
+    <div id="ab1" class="animation-ball"></div>
+    <div id="ab2" class="animation-ball"></div>
+    <div id="ab3" class="animation-ball"></div>
+    <div id="ab4" class="animation-ball"></div>
+    <div id="ab5" class="animation-ball"></div>
+    <div id="ab6" class="animation-ball"></div>
+</body>
+
+</html>
